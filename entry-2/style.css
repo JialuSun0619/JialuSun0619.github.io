@@ -10,3 +10,6 @@ blue paragraph{
 smallest{
     font-size: 18px;
 }
+.image-1{
+    border: radius 200px;
+}

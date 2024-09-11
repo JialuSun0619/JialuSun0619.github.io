@@ -1,5 +1,5 @@
 p{
-    color:red;
+    color:rgb(28, 28, 28);
     font-size: 20px;
 }
 blue paragraph{
@@ -15,7 +15,7 @@ smallest{
     width: 50px;
 }
 h1{
-    color:black;
+    color:rgb(17, 17, 17);
     font-size: 70px;
     animation-delay: 0s;
 }

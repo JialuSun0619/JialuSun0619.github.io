@@ -14,3 +14,8 @@ smallest{
     border: radius 100%;
     width: 50px;
 }
+h1{
+    color:black;
+    font-size: 70px;
+    animation-delay: 0s;
+}

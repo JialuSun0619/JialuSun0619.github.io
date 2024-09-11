@@ -4,7 +4,8 @@ p{
 }
 blue paragraph{
     color:blue;
-    font-size: 20px;
+    font-size: 40px;
+    text-transform: capitalize;
 }
 smallest{
     font-size: 18px;

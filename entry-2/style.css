@@ -11,6 +11,7 @@ h1{
     font-family: "niagara", serif;
     font-weight: 400;
     font-style: normal;
+    animation-duration: 2400ms;
 }
 body{
     background-image:radial-gradient(circle closest-side at 45px 45px, white 0%, rgb(6, 0, 173) 20%, rgb(127, 17, 17) 100%) ;

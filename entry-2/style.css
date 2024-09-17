@@ -86,14 +86,12 @@ div {
   }
 }
 }
-  div1{
+div1{
     width: 100px;
     height: 100px;
     background-color: white;
-    -webkit-animation: squareToCircle 2s 1s infinite alternate;
-  }
-  
-  @-webkit-keyframes squareToCircle {
+    animation: squareToCircle 2s 1s infinite alternate;
+    @keyframes squareToCircle {
       0% {
         border-radius: 0 0 0 0;
         background: white;
@@ -119,4 +117,5 @@ div {
         background: white;
         transform: rotate(180deg);
       }
-  }
+    }
+}

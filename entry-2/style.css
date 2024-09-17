@@ -16,6 +16,7 @@ h1{
     font-weight: 500;
     font-style: normal;
     animation-duration: 2400ms;
+    transition-delay: 0s;
 }
 body{
     border-left-width: 4px;

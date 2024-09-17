@@ -16,5 +16,5 @@ h1{
     animation-delay: 0s;
 }
 body{
-    background-image:url(background.jpg) ;
+    background-image:radial-gradient(circle closest-side at 45px 45px, white 0%, grey 20%, black 100%) ;
 }

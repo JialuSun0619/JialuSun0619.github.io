@@ -23,5 +23,8 @@ h3{
     font-size: 25px;
 }
 a href{
-    color:rgb(14, 14, 106)
+    color:rgb(14, 14, 106);
+}
+mark{
+    color:rgb(14, 14, 106);
 }

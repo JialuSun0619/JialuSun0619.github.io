@@ -46,4 +46,8 @@ p1{
 img{
     size: 80%;
 }
+div{
+    box-sizing: content-box;
+    size-adjust: 100%;
+}
 

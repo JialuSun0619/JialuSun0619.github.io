@@ -9,6 +9,10 @@ p{
     padding:500px;
     width: 200px;
 }
+p{
+    content: url(indie1.jpg);
+    position: relative;
+}
 h1{
     color:rgb(255, 255, 255);
     font-size: 70px;

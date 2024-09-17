@@ -34,5 +34,8 @@ a href{
     color:rgb(14, 14, 106);
 }
 mark{
+    font-family: "gill-sans-nova", sans-serif;
+    font-weight: 400;
+    font-style: italic;
     color:rgb(14, 14, 106);
 }

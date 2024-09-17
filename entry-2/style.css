@@ -6,7 +6,7 @@ p{
     font-style: normal;
     padding: 100px;
     width: 300px;
-    position: relative;
+    position: absolute;
     position: center;
 }
 h1{

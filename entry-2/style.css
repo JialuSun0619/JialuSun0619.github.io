@@ -10,12 +10,11 @@ blue paragraph{
 smallest{
     font-size: 18px;
 }
-.image-1{
-    border: radius 100%;
-    width: 50px;
-}
 h1{
     color:rgb(17, 17, 17);
     font-size: 70px;
     animation-delay: 0s;
+}
+body{
+    background-image:url(background.jpg) ;
 }

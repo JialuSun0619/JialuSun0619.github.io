@@ -39,6 +39,8 @@ p1{
     font-style: italic;
     color:rgb(255, 255, 255);
     width: 50vw;
+    position: relative;
+    position: center;
 }
 p2{
     width: 50vw;

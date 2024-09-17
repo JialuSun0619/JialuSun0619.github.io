@@ -39,13 +39,14 @@ p1{
     font-style: italic;
     color:rgb(255, 255, 255);
 }
-div{
-    border-color:white;
-}
 img{
     size: 80%;
 }
 a{
     color:white;
+    font-size: 30px;
+    font-family: "gill-sans-nova", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 

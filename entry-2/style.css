@@ -39,6 +39,9 @@ p1{
     font-style: italic;
     color:rgb(255, 255, 255);
 }
+div{
+    border-color:white;
+}
 img{
     size: 80%;
 }
@@ -46,6 +49,6 @@ br{
     color: #ffffff;
 }
 a{
-    color:white
+    color:white;
 }
 

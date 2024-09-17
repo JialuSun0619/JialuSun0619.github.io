@@ -5,9 +5,9 @@ p{
     font-weight: 400;
     font-style: normal;
     box-sizing: content-box;
-    border-width: 0px
-    padding: 500px
-    width: 200px
+    border-width: 0px;
+    padding:500px;
+    width: 200px;
 }
 h1{
     color:rgb(255, 255, 255);

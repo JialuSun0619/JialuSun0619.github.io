@@ -14,7 +14,7 @@ h1{
     animation-duration: 2400ms;
 }
 body{
-    background-image: linear-gradient(45deg, rgb(135, 47, 47), rgb(54, 54, 156));
+    background-color: black;
 }
 h2{
     font-size: 30px;

@@ -18,3 +18,12 @@ h1{
 body{
     background-image:radial-gradient(circle closest-side at 45px 45px, white 0%, grey 20%, rgb(115, 31, 31) 100%) ;
 }
+h1{
+    font-size: 35px;
+}
+h2{
+    font-size: 30px;
+}
+h3{
+    font-size: 25px;
+}

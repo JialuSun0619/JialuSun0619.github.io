@@ -7,7 +7,7 @@ p{
     border-width: 0px;
     padding: 400px;
     width: 400px;
-    position: relative;
+    position: absolute;
     position: center;
 }
 h1{

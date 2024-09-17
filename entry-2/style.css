@@ -5,8 +5,8 @@ p{
     font-weight: 400;
     font-style: normal;
     padding: 400px;
-    width: 400px;
-    position: absolute;
+    width: 100px;
+    position: relative;
     position: center;
 }
 h1{

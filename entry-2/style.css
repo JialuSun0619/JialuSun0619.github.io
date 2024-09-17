@@ -4,7 +4,6 @@ p{
     font-family: "gill-sans-nova", sans-serif;
     font-weight: 400;
     font-style: normal;
-    width:500px;
 }
 h1{
     color:rgb(255, 255, 255);
@@ -39,6 +38,13 @@ p1{
     font-weight: 400;
     font-style: italic;
     color:rgb(255, 255, 255);
+    width: 20vw;
+}
+p2{
+    width: 20vw;
+}
+p3{
+    width: 20vw;
 }
 img{
     size: 80%;

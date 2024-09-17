@@ -4,9 +4,10 @@ p{
     font-family: "gill-sans-nova", sans-serif;
     font-weight: 400;
     font-style: normal;
-    padding: 100px;
+    padding: 300px;
     width: 300px;
     position: absolute;
+    position: center;
 }
 h1{
     color:rgb(255, 255, 255);
@@ -45,3 +46,4 @@ p1{
 img{
     size: 80%;
 }
+

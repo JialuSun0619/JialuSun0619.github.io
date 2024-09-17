@@ -50,9 +50,40 @@ p1{
     font-style: italic;
     color:rgb(255, 255, 255);
 }
-a href="../index.html">Back to home{
+a href{
     color:white;
     font-family: "gill-sans-nova", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
+div {
+    /* animation properties */
+    animation-name: my-animation;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    
+    /* other properties */
+    width: 100px;
+    height: 1px;
+    border-radius: 10px;
+    position: relative;
+    left: 0; 
+    right: 0; 
+    margin-left: auto;
+    margin-right: auto; 
+  
+  }
+  
+  @keyframes my-animation {
+    from {
+      background-color: #fffff;
+      width: 300px;
+      top: 10px;
+    }
+    to {
+      background-color: #fffff;
+      width: 50px;
+      top: 100px;
+    }
+  }

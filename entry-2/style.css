@@ -10,8 +10,9 @@ p{
     width: 200px;
 }
 body{
-    content: url(indie1.jpg);
+    background-image: url(indie1.jpg);
     position: relative;
+    position: right;
 }
 h1{
     color:rgb(255, 255, 255);
@@ -77,12 +78,12 @@ div {
   
   @keyframes my-animation {
     from {
-      background-color: #fffff;
+      background-color: #ffffff;
       width: 300px;
       top: 10px;
     }
     to {
-      background-color: #fffff;
+      background-color: #ffffff;
       width: 50px;
       top: 100px;
     }

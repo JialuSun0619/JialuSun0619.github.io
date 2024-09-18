@@ -33,7 +33,7 @@ h3{
     font-weight: 700;
     font-style: normal;
 }
-p1{
+.p1{
     font-family: "gill-sans-nova", sans-serif;
     font-weight: 400;
     font-style: italic;
@@ -42,10 +42,10 @@ p1{
     position: relative;
     position: center;
 }
-p2{
+.p2{
     width: 50vw;
 }
-p3{
+.p3{
     width: 50vw;
 }
 img{

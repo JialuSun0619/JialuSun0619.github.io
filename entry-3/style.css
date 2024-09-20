@@ -125,8 +125,6 @@ footer{
     max-width: 500px;
     height: auto;
     transition: transform 0.3s ease-in-out;
-    position:relative;
-    bottom: -100px;
     grid-template-rows: auto 1fr auto;
     padding: 20px;
 }

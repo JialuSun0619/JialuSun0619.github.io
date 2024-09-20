@@ -126,6 +126,8 @@ footer{
     height: auto;
     transition: transform 0.3s ease-in-out;
     top: -50px;
+    position:relative;
+    bottom: 50px;
 }
 
 .image-section img:hover {

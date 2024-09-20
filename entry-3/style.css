@@ -33,7 +33,6 @@ h1 {
     max-width:600px;
     height:auto;
     opacity:0%;
-    padding-bottom: 20px;
     animation: highlightFadeIn 3s ease-in-out forwards;
     transition: transform 0.5s ease-in-out;
     box-shadow:0 10px 20px rgba(255, 255, 255, 0.1)

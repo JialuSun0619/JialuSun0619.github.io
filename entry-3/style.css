@@ -28,13 +28,15 @@ h1 {
     grid-gap: 20px;
 }
 /* Image Section Styles */
-.img-section {
+.img-section,
+.gif-section {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.img-section img {
+.img-section img,
+.gif-section img {
     width: 100%;
     height: auto;
     opacity: 0;
@@ -42,7 +44,8 @@ h1 {
     transition: transform 0.3s ease-in-out;
 }
 
-.img-section img:hover {
+.img-section img:hover,
+.gif-section img:hover {
     transform: scale(1.05);
     opacity: 0.9;
 }
@@ -69,6 +72,10 @@ h1 {
         opacity: 1;
         transform: translateY(0)
     }
+}
+/* Fade in for GIF */
+.fade-in-gif {
+    animation: fadeIn 3s ease-in-out forwards; /* Slightly slower animation for GIF */
 }
 
 /*links*/

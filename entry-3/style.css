@@ -8,7 +8,7 @@ body{
 /*layout*/
 .container{
     display:grid;
-    grid-template-rows: auto 1 fr auto;
+    grid-template-rows: auto 1fr auto;
     min-height: 100vh;
     max-width:1200px;
     margin:0 auto;
@@ -31,7 +31,7 @@ main{
     align-items: start;
 }
 section{
-    margin: bottom 20px;
+    margin-bottom: 20px;
 }
 /*headings*/
 h1{
@@ -84,7 +84,7 @@ h2:hover{
     width:100%;
     height:auto;
     opacity:0;
-    animation:fadein 2s ease-in-out forwards;
+    animation:fadeIn 2s ease-in-out forwards;
 }
 /*links*/
 a{
@@ -101,14 +101,14 @@ a:hover{
 p{
     font-size:20px;
     line-height: 1.6;
-    animation:fadein 1.2s ease-in-out forwards;
+    animation:fadeIn 1.2s ease-in-out forwards;
     opacity: 0;
 }
 /*footer*/
 footer{
     text-align: center;
     padding: 20px;
-    background-color: #222,
+    background-color: #222;
     margin-top: 40px;
     border-top: 1px solid white;
 }

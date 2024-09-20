@@ -75,7 +75,7 @@ h2:hover{
         transform: translateY(0)
     }
 }
-@keyframe pop-in{
+@keyframes pop-in{
     from{
         transform: scale(1);
         opacity: 1;
@@ -87,31 +87,49 @@ h2:hover{
     opacity:0;
     animation:fadein 2s ease-in-out forwards;
 }
-
-.p1{
-    font-family: "gill-sans-nova", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-    color:rgb(255, 255, 255);
-    width: 50vw;
-    position: relative;
-    position: center;
-}
-.p2{
-    width: 50vw;
-}
-.p3{
-    width: 50vw;
-}
-img{
-    size: 80%;
-}
+/*links*/
 a{
-    color:white;
-    font-size: 20px;
-    font-family: "gill-sans-nova", sans-serif;
-    font-weight: 700;
-    font-style: normal;
+    color: white;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:20px;
+    transition: 0.3s ease-in-out;
+}
+a:hover{
+    color:#6871fc;
+}
+/*paragraphs*/
+p{
+    font-size:20px;
+    line-height: 1.6;
+    animation:fadein 1.2s ease-in-out forwards;
+    opacity: 0;
+}
+/*footer*/
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: #222,
+    margin-top: 40px;
+    border-top: 1px solid white;
+}
+/*image section*/
+.img-section{
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.image-section img {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-section img:hover {
+    transform: scale(1.05);
 }
 hr{
     color:#ffffff;

@@ -38,7 +38,7 @@ h1{
     color:rgb(255, 255, 255);
     font-size: 70px;
     font-family: "gill-sans-nova-shadowed", sans-serif;
-    text-shadow: 3px 3px 10px rgba(0,0,0,0.5);
+    font-weight: 500;
     font-style: normal;
     animation: pop-in 1s ease-in-out forwards;
 }

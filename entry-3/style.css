@@ -126,7 +126,7 @@ footer{
     height: auto;
     transition: transform 0.3s ease-in-out;
     grid-template-rows: auto 1fr auto;
-    padding: 20px;
+    padding: 10px;
 }
 
 .image-section img:hover {

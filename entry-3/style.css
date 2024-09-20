@@ -17,6 +17,9 @@ header {
     margin-bottom: 60px;
 }
 h1 {
+    font-family: "gill-sans-nova-shadowed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
     font-size: 3rem;
     font-weight: 700;
     animation: fadeIn 1.5s ease-in-out forwards;

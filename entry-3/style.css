@@ -43,17 +43,14 @@ h1{
     font-style: normal;
     animation: pop-in 1s ease-in-out forwards;
 }
-body{
-    border-left-width: 4px;
-    border-color: #ffffff;
-    background-color: black;
-}
 h2{
     color: #ffffff;
     font-size: 30px;
     font-family: "gill-sans-nova", sans-serif;
     font-weight: 700;
     font-style: normal;
+    margin-top:20px;
+    transition: transform 0.3s ease-in-out;
 }
 h3{
     color: #ffffff;
@@ -62,6 +59,35 @@ h3{
     font-weight: 700;
     font-style: normal;
 }
+h2:hover{
+    transform: scale(1.05);
+    color: #f0f0f0;
+
+}
+/*animations*/
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+@keyframe pop-in{
+    from{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.fade-in-image{
+    width:100%;
+    height:auto;
+    opacity:0;
+    animation:fadein 2s ease-in-out forwards;
+}
+
 .p1{
     font-family: "gill-sans-nova", sans-serif;
     font-weight: 400;

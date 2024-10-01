@@ -8,6 +8,7 @@ body {
 }
 
 header h1 {
+    font-family: "gill-sans-nova-shadowed", sans-serif;
     font-size: 3rem;
     font-weight: bold;
     margin-top: 50px;

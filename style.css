@@ -71,7 +71,7 @@ header p {
     transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
 }
 .entry-square:hover {
-    transform: rotate(15deg) scale(1.2);
+    transform: scale(1.2);
     background-color: #888;
 }
 .entry-square .entry-title {
@@ -98,7 +98,7 @@ header p {
     position: relative;
 }
 .entry-triangle:hover {
-    transform: scale(1.2) rotate(10deg);
+    transform: scale(1.2);
     border-bottom-color: #888;
 }
 .entry-triangle .entry-title {

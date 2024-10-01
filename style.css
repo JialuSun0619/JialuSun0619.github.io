@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Gill Sans", sans-serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 50px;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 50px;
+    color: #888;
+    animation: fadeIn 2.5s ease-in-out forwards;
+}
+
+/* Entry Section */
+.entries {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+/* Geometric Shape for Entry 1 - Circle */
+.entry-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+.entry-circle:hover {
+    transform: scale(1.2);
+    background-color: #888;
+}
+.entry-circle .entry-title {
+    color: black;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+.entry-circle:hover .entry-title {
+    color: white;
+}
+
+/* Geometric Shape for Entry 2 - Square */
+.entry-square {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+.entry-square:hover {
+    transform: rotate(15deg) scale(1.2);
+    background-color: #888;
+}
+.entry-square .entry-title {
+    color: black;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+.entry-square:hover .entry-title {
+    color: white;
+}
+
+/* Geometric Shape for Entry 3 - Triangle */
+.entry-triangle {
+    width: 0;
+    height: 0;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-bottom: 150px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: transform 0.5s ease-in-out, border-bottom-color 0.5s ease-in-out;
+    position: relative;
+}
+.entry-triangle:hover {
+    transform: scale(1.2) rotate(10deg);
+    border-bottom-color: #888;
+}
+.entry-triangle .entry-title {
+    position: absolute;
+    top: 70px;
+    font-size: 1.2rem;
+    color: black;
+    transition: color 0.3s ease;
+}
+.entry-triangle:hover .entry-title {
+    color: white;
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    font-size: 1rem;
+    color: #888;
+    animation: fadeIn 3s ease-in-out forwards;
+}
+
+/* Keyframes for Fade In */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

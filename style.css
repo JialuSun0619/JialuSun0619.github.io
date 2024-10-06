@@ -111,6 +111,32 @@ header p {
 .entry-triangle:hover .entry-title {
     color: white;
 }
+/* Geometric Shape for Entry 4 - Circle */
+.entry-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+.entry-circle:hover {
+    transform: scale(1.2);
+    background-color: #888;
+}
+.entry-circle .entry-title {
+    color: black;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+.entry-circle:hover .entry-title {
+    color: white;
+}
 
 /* Footer */
 footer {

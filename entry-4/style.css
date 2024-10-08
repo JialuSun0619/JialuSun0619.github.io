@@ -8,14 +8,14 @@ body {
     overflow: hidden;
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
 }
 
 .container {
     width: 100vw;
     height: 100vh;
     position: relative;
+    flex-grow: 1;
 }
 
 header h1 {
@@ -45,11 +45,9 @@ header p{
 .track {
     position: absolute;
     animation: float 15s infinite ease-in-out;
-    animation-delay: calc(-10s * var(--random)); /* Stagger the animations */
-    text-align: center;
-    transform-origin: center;
     top: calc(var(--y) * 1vh); 
     left: calc(var(--x) * 1vw);
+    z-index: 1; 
 }
 
 .track-name, .artist-name {
@@ -62,7 +60,7 @@ header p{
 
 .track-name:hover, .artist-name:hover {
     transform: scale(1.5) rotate(5deg);
-    color: #00007b; 
+    color: #610000; 
 }
 
 /* Media Elements */
@@ -74,6 +72,7 @@ header p{
     animation: float 25s infinite ease-in-out;
     top: calc(var(--y) * 1vh); 
     left: calc(var(--x) * 1vw); 
+    z-index: 0;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
@@ -94,13 +93,13 @@ header p{
 /* Keyframes for Floating Animation */
 @keyframes float {
     0% {
-        transform: translate(var(--x), var(--y)) scale(1) rotate(0deg);
+        transform: translate(0, 0) scale(1) rotate(0deg);
     }
     50% {
-        transform: translate(calc(var(--x) + 20px), calc(var(--y) - 20px)) scale(1.1) rotate(2deg);
+        transform: translate(10px, -10px) scale(1.1) rotate(2deg);
     }
     100% {
-        transform: translate(var(--x), var(--y)) scale(1) rotate(0deg);
+        transform: translate(0, 0) scale(1) rotate(0deg);
     }
 }
 
@@ -116,12 +115,13 @@ header p{
 
 /* Footer */
 footer {
-    margin-top: 50px;
     font-size: 1rem;
     color: #888;
-    animation: fadeIn 3s ease-in-out forwards;
-    text-align: bottom;
     padding: 20px;
     background-color: #0a0a0a;
     border-top: 1px solid black;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }

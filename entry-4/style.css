@@ -24,6 +24,13 @@ header h1 {
     text-align: center;
     margin-top: 20px;
     color: white;
+    font-family: "gill-sans-nova-shadowed", sans-serif;
+}
+.p{
+    font-size: 2rem;
+    font-weight: normal;
+    text-align: center;
+    font-family: "gill-sans-nova-shadowed", sans-serif;
 }
 
 /* Floating text container */

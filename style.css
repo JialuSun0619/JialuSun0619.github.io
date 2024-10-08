@@ -31,13 +31,11 @@ header p {
 /* Entries Section */
 .entries {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    gap: 40px;
-    max-width: 100%;
-    width: 70vw; 
+    gap: 60px; /* Space between shapes */
+    margin-bottom: 50px;
 }
-
 
 /* Dynamic Circle Shape */
 .entry-dynamic-circle {
@@ -45,7 +43,6 @@ header p {
     height: 150px;
     background: linear-gradient(135deg, #fff, #ccc);
     border-radius: 50%;
-    clip-path: circle(60%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,6 +58,7 @@ header p {
 .entry-dynamic-circle .entry-title {
     color: black;
     font-size: 1.5rem;
+    padding: 10px;
     transition: color 0.3s ease;
 }
 
@@ -89,6 +87,7 @@ header p {
 .entry-dynamic-polygon .entry-title {
     color: black;
     font-size: 1.5rem;
+    padding: 10px;
     transition: color 0.3s ease;
 }
 
@@ -103,7 +102,6 @@ header p {
     border-left: 75px solid transparent;
     border-right: 75px solid transparent;
     border-bottom: 150px solid #fff;
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -121,6 +119,7 @@ header p {
     position: absolute;
     top: 60px;
     font-size: 1.5rem;
+    padding: 10px;
     color: black;
     transition: color 0.3s ease;
 }
@@ -150,6 +149,7 @@ header p {
 .entry-dynamic-blob .entry-title {
     color: black;
     font-size: 1.5rem;
+    padding: 10px;
     transition: color 0.3s ease;
 }
 
@@ -159,7 +159,6 @@ header p {
 
 /* Footer */
 footer {
-    margin-top: 50px;
     font-size: 1rem;
     color: #888;
     animation: fadeIn 3s ease-in-out forwards;

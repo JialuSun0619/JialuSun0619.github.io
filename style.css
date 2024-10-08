@@ -23,7 +23,7 @@ header p {
     animation: fadeIn 2.5s ease-in-out forwards;
 }
 
-/* Entry Section */
+/* Entries Section */
 .entries {
     display: flex;
     justify-content: center;
@@ -32,65 +32,71 @@ header p {
     flex-wrap: wrap;
 }
 
-/* Geometric Shape for Entry 1 - Circle */
-.entry-circle {
+/* Dynamic Circle Shape */
+.entry-dynamic-circle {
     width: 150px;
     height: 150px;
+    background: linear-gradient(135deg, #fff, #ccc);
     border-radius: 50%;
-    background: linear-gradient(145deg, #fff, #ccc);
+    clip-path: circle(60%);
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
+    transition: transform 0.6s ease-in-out, background-color 0.6s ease-in-out;
 }
-.entry-circle:hover {
+
+.entry-dynamic-circle:hover {
     transform: scale(1.2) rotate(5deg);
     background-color: #888;
 }
-.entry-circle .entry-title {
+
+.entry-dynamic-circle .entry-title {
     color: black;
     font-size: 1.5rem;
     transition: color 0.3s ease;
 }
-.entry-circle:hover .entry-title {
+
+.entry-dynamic-circle:hover .entry-title {
     color: white;
 }
 
-/* Geometric Shape for Entry 2 - Square */
-.entry-square {
+/* Dynamic Polygon Shape */
+.entry-dynamic-polygon {
     width: 150px;
     height: 150px;
-    background: linear-gradient(135deg, #fff, #999);
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(145deg, #fff, #ddd);
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
+    transition: transform 0.6s ease-in-out, background-color 0.6s ease-in-out;
 }
-.entry-square:hover {
-    transform: scale(1.2) rotate(-3deg);
+
+.entry-dynamic-polygon:hover {
+    transform: scale(1.3) rotate(-10deg);
     background-color: #888;
 }
-.entry-square .entry-title {
+
+.entry-dynamic-polygon .entry-title {
     color: black;
     font-size: 1.5rem;
     transition: color 0.3s ease;
 }
-.entry-square:hover .entry-title {
+
+.entry-dynamic-polygon:hover .entry-title {
     color: white;
 }
 
-/* Geometric Shape for Entry 3 - Triangle */
-.entry-triangle {
+/* Dynamic Triangle Shape */
+.entry-dynamic-triangle {
     width: 0;
     height: 0;
     border-left: 75px solid transparent;
     border-right: 75px solid transparent;
-    border-bottom: 150px solid white;
+    border-bottom: 150px solid #fff;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,44 +104,49 @@ header p {
     position: relative;
     transition: transform 0.5s ease-in-out, border-bottom-color 0.5s ease-in-out;
 }
-.entry-triangle:hover {
+
+.entry-dynamic-triangle:hover {
     transform: scale(1.2) rotate(5deg);
     border-bottom-color: #888;
 }
-.entry-triangle .entry-title {
+
+.entry-dynamic-triangle .entry-title {
     position: absolute;
-    top: 70px;
+    top: 60px;
     font-size: 1.5rem;
     color: black;
     transition: color 0.3s ease;
 }
-.entry-triangle:hover .entry-title {
+
+.entry-dynamic-triangle:hover .entry-title {
     color: white;
 }
 
-/* Abstract Shape for Entry 4 - More Creative */
-.entry-rectangle {
-    width: 180px;
-    height: 180px;
-    background: radial-gradient(circle, #fff 40%, #ccc);
-    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+/* Dynamic Blob Shape */
+.entry-dynamic-blob {
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle at 50% 50%, #fff, #bbb);
+    clip-path: polygon(39% 6%, 60% 2%, 75% 17%, 85% 33%, 95% 54%, 75% 81%, 50% 98%, 25% 81%, 8% 50%, 15% 24%);
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    position: relative;
     transition: transform 0.6s ease-in-out, background-color 0.6s ease-in-out;
 }
-.entry-rectangle:hover {
-    transform: scale(1.3) rotate(-10deg);
+
+.entry-dynamic-blob:hover {
+    transform: scale(1.4) rotate(15deg);
     background-color: #888;
 }
-.entry-rectangle .entry-title {
+
+.entry-dynamic-blob .entry-title {
     color: black;
     font-size: 1.5rem;
     transition: color 0.3s ease;
 }
-.entry-rectangle:hover .entry-title {
+
+.entry-dynamic-blob:hover .entry-title {
     color: white;
 }
 

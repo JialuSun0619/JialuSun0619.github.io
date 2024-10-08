@@ -111,4 +111,8 @@ footer {
     color: #888;
     animation: fadeIn 3s ease-in-out forwards;
     text-align: bottom;
+    text-align: center;
+    padding: 20px;
+    background-color: #0a0a0a;
+    border-top: 1px solid black;
 }

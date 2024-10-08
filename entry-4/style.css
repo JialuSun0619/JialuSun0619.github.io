@@ -5,21 +5,26 @@ body {
     font-family: "Gill Sans", sans-serif;
     background-color: black;
     color: white;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     text-align: center;
 }
 
 header h1 {
     font-size: 3rem;
-    font-weight: bold;
-    margin-top: 50px;
-    animation: fadeIn 2s ease-in-out forwards;
+    margin-top: 20px;
 }
 
 header p {
-    font-size: 1.2rem;
-    margin-bottom: 50px;
+    font-size: 1.5rem;
     color: #888;
-    animation: fadeIn 2.5s ease-in-out forwards;
 }
 
 /* Interactive Media Section */
@@ -50,7 +55,47 @@ header p {
     transform: scale(1.05);
     background-color: #333;
 }
+/* Floating text container */
+.floating-text-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
 
+/* Track styles */
+.track {
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%, -50%);
+    animation: float 10s ease-in-out infinite;
+    text-align: center;
+}
+
+.track-name, .artist-name {
+    font-size: 1.2rem;
+    color: white;
+    opacity: 0.8;
+    transition: transform 0.5s ease, color 0.5s ease;
+}
+
+.track-name:hover, .artist-name:hover {
+    transform: scale(1.5);
+    color: #fffa65;
+}
+
+/* Animation for random floating effect */
+@keyframes float {
+    0% {
+        transform: translate(-50%, -50%) translateX(0) translateY(0);
+    }
+    50% {
+        transform: translate(-50%, -50%) translateX(20px) translateY(-20px);
+    }
+    100% {
+        transform: translate(-50%, -50%) translateX(0) translateY(0);
+    }
+}
 /* Overlay Text Appearing on Hover */
 .media-overlay {
     position: absolute;

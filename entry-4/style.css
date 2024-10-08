@@ -44,9 +44,9 @@ header p{
 /* Track Styles */
 .track {
     position: absolute;
-    animation: float 15s infinite ease-in-out;
-    top: calc(var(--y) * 1vh); 
-    left: calc(var(--x) * 1vw);
+    animation: float 10s infinite ease-in-out;
+    top: var(--y)vh;  
+    left: var(--x)vw;
     z-index: 1; 
 }
 
@@ -59,7 +59,7 @@ header p{
 }
 
 .track-name:hover, .artist-name:hover {
-    transform: scale(1.5) rotate(5deg);
+    transform: scale(1.5) rotate(2deg);
     color: #610000; 
 }
 
@@ -70,8 +70,8 @@ header p{
     height: 200px;
     overflow: hidden;
     animation: float 25s infinite ease-in-out;
-    top: calc(var(--y) * 1vh); 
-    left: calc(var(--x) * 1vw); 
+    top: var(--y)vh; 
+    left: var(--x)vw; 
     z-index: 0;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
 }

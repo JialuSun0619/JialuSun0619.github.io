@@ -26,11 +26,14 @@ header p {
 /* Entries Section */
 .entries {
     display: flex;
-    justify-content: center;
-    gap: 40px;
+    justify-content: space-around;
+    align-items: center;
     padding: 20px;
-    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 100%;
+    flex-wrap: nowrap;
 }
+
 
 /* Dynamic Circle Shape */
 .entry-dynamic-circle {

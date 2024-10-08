@@ -50,8 +50,8 @@ header h1 {
 }
 
 .track-name:hover, .artist-name:hover {
-    transform: scale(1.5) rotate(5deg); /* Slight rotation on hover */
-    color: #fffa65; /* Highlighted color on hover */
+    transform: scale(1.5) rotate(5deg);
+    color: #00007b; 
 }
 
 /* Keyframes for Floating Animation */

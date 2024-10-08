@@ -6,55 +6,26 @@ body {
     background-color: black;
     color: white;
     overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 100vw;
     height: 100vh;
-    text-align: center;
+    position: relative;
 }
 
 header h1 {
     font-size: 3rem;
-    margin-top: 20px;
-}
-
-header p {
-    font-size: 1.5rem;
-    color: #888;
-}
-
-/* Interactive Media Section */
-.interactive-media {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    padding: 20px;
-    flex-wrap: wrap;
-}
-
-/* Media Block for Hover Interactions */
-.media-block {
-    width: 300px;
-    height: 300px;
-    position: relative;
-    background-color: white;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-weight: bold;
     text-align: center;
+    margin-top: 20px;
+    color: white;
 }
-.media-block:hover {
-    transform: scale(1.05);
-    background-color: #333;
-}
+
 /* Floating text container */
 .floating-text-container {
     position: relative;
@@ -62,64 +33,68 @@ header p {
     height: 100%;
 }
 
-/* Track styles */
+/* Track Styles */
 .track {
     position: absolute;
-    top: var(--y);
-    left: var(--x);
-    transform: translate(-50%, -50%);
-    animation: float 10s ease-in-out infinite;
+    animation: float 15s infinite ease-in-out;
+    animation-delay: calc(-10s * var(--random)); /* Stagger the animations */
     text-align: center;
+    transform-origin: center;
 }
 
 .track-name, .artist-name {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: white;
-    opacity: 0.8;
+    opacity: 0.9;
     transition: transform 0.5s ease, color 0.5s ease;
 }
 
 .track-name:hover, .artist-name:hover {
-    transform: scale(1.5);
-    color: #fffa65;
+    transform: scale(1.5) rotate(5deg); /* Slight rotation on hover */
+    color: #fffa65; /* Highlighted color on hover */
 }
 
-/* Animation for random floating effect */
+/* Keyframes for Floating Animation */
 @keyframes float {
     0% {
-        transform: translate(-50%, -50%) translateX(0) translateY(0);
+        transform: translate(var(--x), var(--y)) scale(1) rotate(0deg);
     }
     50% {
-        transform: translate(-50%, -50%) translateX(20px) translateY(-20px);
+        transform: translate(calc(var(--x) + 20px), calc(var(--y) - 20px)) scale(1.1) rotate(2deg);
     }
     100% {
-        transform: translate(-50%, -50%) translateX(0) translateY(0);
+        transform: translate(var(--x), var(--y)) scale(1) rotate(0deg);
     }
 }
-/* Overlay Text Appearing on Hover */
-.media-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
-.media-block:hover .media-overlay {
-    opacity: 1;
-}
 
-/* Space for Adding Images, Videos, or Gifs */
+/* Media section placeholder */
 .media-space {
     width: 100%;
-    height: 100%;
-    background-color: #888; /* Placeholder background color */
+    height: 300px;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
-    font-size: 1.2rem;
+    border: 2px solid white;
+    color: white;
+    font-size: 1.5rem;
+    opacity: 0.7;
+}
+
+/* Ensure random positions for the floating text */
+.track {
+    --random: calc(1 + (random() * 5)); /* Random animation delay */
+    --x: calc(random() * 100vw); /* Random horizontal position */
+    --y: calc(random() * 100vh); /* Random vertical position */
+}
+
+/* Utility class to define random float speed */
+.track:nth-child(even) {
+    animation-duration: 20s;
+}
+
+.track:nth-child(odd) {
+    animation-duration: 25s;
 }
 
 /* Footer */
@@ -128,16 +103,4 @@ footer {
     font-size: 1rem;
     color: #888;
     animation: fadeIn 3s ease-in-out forwards;
-}
-
-/* Keyframes for Fade In */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }

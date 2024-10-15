@@ -71,6 +71,7 @@ a{
     font-family: "gill-sans-nova", sans-serif;
     font-weight: 700;
     font-style: normal;
+    text-decoration: none;
 }
 /* Media Queries */
 @media (max-width: 1024px) {

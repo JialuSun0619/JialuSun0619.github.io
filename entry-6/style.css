@@ -78,3 +78,37 @@ header p {
         transform: scaleY(1);
     }
 }
+
+/* Entry Text */
+.entry-text {
+    margin-top: 40px;
+    max-width: 600px;
+}
+
+.entry-text h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.entry-text p {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    font-size: 1rem;
+    color: #888;
+    text-align: center;
+}
+
+footer a {
+    color: #00ffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ff00ff;
+}

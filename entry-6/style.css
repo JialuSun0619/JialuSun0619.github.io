@@ -5,16 +5,9 @@ body {
     font-family: "Gill Sans", sans-serif;
     background-color: black;
     color: white;
-    text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
-    background-image: url('1.jpg');
-    background-size: cover;
-    background-blend-mode: overlay;
-    background-color: rgba(0, 0, 0, 0.6);
 }
 
 header h1 {

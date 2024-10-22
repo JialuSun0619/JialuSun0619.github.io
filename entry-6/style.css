@@ -68,6 +68,28 @@ header p {
     100% { transform: scaleY(1); }
 }
 
+.image-section {
+    margin-top: 40px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.image-hover {
+    width: 300px;
+    height: auto;
+    transition: transform 0.5s ease, filter 0.5s ease;
+    border-radius: 15px;
+    border: 2px solid white;
+}
+
+/* Hover effects for image */
+.image-hover:hover {
+    transform: scale(1.2) rotate(5deg);
+    filter: grayscale(100%);
+    box-shadow: 0 15px 30px rgba(255, 255, 255, 0.6);
+}
+
 /* Entry Text */
 .entry-text {
     margin-top: 40px;

@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Gill Sans", sans-serif;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+header h1 {
+    font-family: "gill-sans-nova-shadowed", sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 20px;
+    color: white;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #888;
+}
+
+/* Soundwaves Section */
+.soundwaves {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.wave {
+    width: 20px;
+    height: 200px;
+    background: linear-gradient(135deg, #00ffff, #0073ff);
+    border-radius: 10px;
+    animation: pulse 2s infinite ease-in-out;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.wave:hover {
+    transform: scale(1.2);
+    background-color: #ff00ff;
+}
+
+/* Individual wave timings */
+.wave-1 {
+    animation-delay: 0s;
+}
+.wave-2 {
+    animation-delay: 0.2s;
+}
+.wave-3 {
+    animation-delay: 0.4s;
+}
+.wave-4 {
+    animation-delay: 0.6s;
+}
+.wave-5 {
+    animation-delay: 0.8s;
+}
+
+/* Animation for the soundwaves */
+@keyframes pulse {
+    0% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(1.5);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}

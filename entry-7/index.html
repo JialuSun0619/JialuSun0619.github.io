@@ -86,9 +86,18 @@ Some of today's prominent indie rock artists are The 1975, Vampire Weekend and P
             <a href="../index.html">Back to Collection</a>
         </footer>
         <script>
-            function playVideo() {
-                alert("Play video functionality goes here");
+            function toggleVideo() {
+            const video = document.getElementById('indieVideo');
+            const playButton = document.querySelector('.play-button span');
+            
+            if (video.paused) {
+                video.play();
+                playButton.textContent = '❚❚';
+            } else {
+                video.pause();
+                playButton.textContent = '▶';
             }
+        }
         </script>
     </body>
 </html>

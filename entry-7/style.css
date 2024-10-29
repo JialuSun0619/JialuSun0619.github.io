@@ -8,7 +8,6 @@
 body {
     font-family: "Gill Sans", sans-serif;
     background-color: #000; 
-    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;

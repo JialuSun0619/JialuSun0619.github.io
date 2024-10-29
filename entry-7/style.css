@@ -43,6 +43,13 @@ header p {
 .intro {
     animation: fadeIn 1.5s ease;
     opacity: 0.9;
+    margin: 40px auto;
+    text-align: center; 
+    max-width: 800px;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
 }
 
 /* Video Section */

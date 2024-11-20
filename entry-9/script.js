@@ -5,27 +5,27 @@ const shuffleBtn = document.getElementById('shuffle-btn');
 // Album data: images and descriptions
 const albums = [
     {
-        cover: "images/1.png",
+        cover: "1.png",
         title: "春游",
         description: "1 早上好 04:20 2 Monday (feat. Lionman) 04:26..."
     },
     {
-        cover: "images/2.png",
+        cover: "2.png",
         title: "MGMT",
         description: "Surreal lyrics and electro-indie beats."
     },
     {
-        cover: "images/3.png",
+        cover: "3.png",
         title: "Tame Impala",
         description: "Hypnotic vibes and psychedelic rock tunes."
     },
     {
-        cover: "images/4.png",
+        cover: "4.png",
         title: "Beach House",
         description: "Dreamy melodies with a touch of mystery."
     },
     {
-        cover: "images/5.png",
+        cover: "5.png",
         title: "Mac DeMarco",
         description: "Chill, lo-fi indie rock for wandering minds."
     }

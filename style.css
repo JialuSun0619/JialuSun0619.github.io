@@ -243,6 +243,73 @@ header p {
     color: white;
 }
 
+<<<<<<< HEAD
+/* Dynamic Star Shape */
+.entry-dynamic-star {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(145deg, #fff, #ddd);
+    clip-path: polygon(
+        50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%,
+        50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: transform 0.6s ease-in-out, background-color 0.6s ease-in-out;
+}
+
+.entry-dynamic-star:hover {
+    transform: scale(1.3) rotate(15deg);
+    background-color: #888;
+}
+
+.entry-dynamic-star .entry-title {
+    color: black;
+    font-size: 1.5rem;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.entry-dynamic-star:hover .entry-title {
+    color: white;
+}
+
+/* Dynamic Cross Shape */
+.entry-dynamic-cross {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(145deg, #fff, #ddd);
+    clip-path: polygon(
+        25% 0%, 75% 0%, 75% 25%, 100% 25%, 100% 75%, 75% 75%, 75% 100%, 
+        25% 100%, 25% 75%, 0% 75%, 0% 25%, 25% 25%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: transform 0.6s ease-in-out, background-color 0.6s ease-in-out;
+}
+
+.entry-dynamic-cross:hover {
+    transform: scale(1.3) rotate(-15deg);
+    background-color: #888;
+}
+
+.entry-dynamic-cross .entry-title {
+    color: black;
+    font-size: 1.5rem;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.entry-dynamic-cross:hover .entry-title {
+    color: white;
+}
+
+=======
+>>>>>>> parent of 9426e89 (a)
 /* Footer */
 footer {
     font-size: 1rem;

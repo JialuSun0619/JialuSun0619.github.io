@@ -1,17 +1,20 @@
-// JavaScript for random album selection and autoplay
-
 const albumContainer = document.getElementById("album-container");
 const albumCover = document.getElementById("album-cover");
 const albumAudio = document.getElementById("album-audio");
+const albumTitle = document.getElementById("album-title");
+const albumArtist = document.getElementById("album-artist");
 
-// List of album cover images and audio files
+// List of album data with cover images, audio files, titles, and artists
 const albumData = [
-    { cover: "1.png", audio: "1.mp3" },
-    { cover: "2.png", audio: "2.mp3" },
-    { cover: "3.jpg", audio: "3.mp3" },
-    { cover: "4.jpg", audio: "4.mp3" },
-    { cover: "5.jpg", audio: "5.mp3" }
+    { cover: "1.png", audio: "1.mp3", title: "Album One", artist: "Artist One" },
+    { cover: "2.png", audio: "2.mp3", title: "Album Two", artist: "Artist Two" },
+    { cover: "3.png", audio: "3.mp3", title: "Album Three", artist: "Artist Three" },
+    { cover: "4.png", audio: "4.mp3", title: "Album Four", artist: "Artist Four" },
+    { cover: "5.png", audio: "5.mp3", title: "Album Five", artist: "Artist Five" }
 ];
+
+// Colors for random background and border effects
+const colors = ["#00FF00", "#FF00FF", "#00FFFF", "#FFFF00", "#FF5733"];
 
 // Current album index
 let currentIndex = Math.floor(Math.random() * albumData.length);
@@ -21,6 +24,13 @@ function loadAlbum(index) {
     const album = albumData[index];
     albumCover.src = album.cover;
     albumAudio.src = album.audio;
+    albumTitle.innerText = album.title;
+    albumArtist.innerText = album.artist;
+
+    // Random background and border colors
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+    albumContainer.style.borderColor = randomColor;
+    albumContainer.style.transform = `rotate(${Math.floor(Math.random() * 30) - 15}deg) scale(${Math.random() * 0.4 + 0.8})`;
 
     // Fade-in effect for album cover
     albumCover.style.opacity = 0;

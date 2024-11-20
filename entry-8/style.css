@@ -27,22 +27,17 @@ header h1 {
     font-weight: bold;
 }
 
-header p {
-    font-size: 1rem;
-    color: #aaa;
-}
-
-/* Album container */
 #album-container {
-    width: 60vw;
-    height: 60vh;
-    overflow: hidden;
+    width: 300px;
+    height: 300px;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 3px solid #fff;
-    border-radius: 10px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: transform 0.8s ease;
 }
 
 #album-cover {
@@ -51,6 +46,20 @@ header p {
     object-fit: cover;
     opacity: 0;
     transition: opacity 1s ease;
+}
+
+.album-info {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+}
+
+#album-title, #album-artist {
+    font-size: 1rem;
+    margin: 5px 0;
 }
 
 .controls {

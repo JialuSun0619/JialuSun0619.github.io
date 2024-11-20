@@ -16,19 +16,23 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <header>
+            <h1>Indie Music Inspiration</h1>
+            <p></p>
+        </header>
         <main>
             <div id="album-container">
-                <img id="album-cover" src="" alt="Album Cover">
-                <audio id="album-audio" autoplay loop></audio>
-                <div class="album-info">
-                    <p id="album-title">Album Title</p>
-                    <p id="album-artist">Artist</p>
+                <div id="album-cover" class="album-card">
+                    <h2 id="album-title">Album Title</h2>
+                    <img id="cover-image" src="" alt="Album Cover">
+                    <p id="artist-name">Artist Name</p>
                 </div>
-            </div>
-            <div class="controls">
-                <button onclick="nextAlbum()">Next Album</button>
+                <button id="next-album">Next Album</button>
             </div>
         </main>
-        <script src="script.js"></script>
+        <footer>
+            <p></p>
+        </footer>
+        <script src="script.js" async defer></script>
     </body>
 </html>

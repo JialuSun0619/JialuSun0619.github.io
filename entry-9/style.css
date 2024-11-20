@@ -92,7 +92,7 @@ main {
 }
 
 /* Button Styles */
-#shuffle-btn {
+#next-album{
     background: linear-gradient(45deg, #396aa5, #922f2f);
     border: none;
     color: white;
@@ -106,7 +106,7 @@ main {
     transition: transform 0.3s ease, background 0.3s ease;
 }
 
-#shuffle-btn:hover {
+#next-album:hover {
     transform: scale(1.1);
     background: linear-gradient(45deg, #0040ff, #ffdd1f);
 }

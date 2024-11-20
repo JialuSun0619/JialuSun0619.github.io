@@ -46,8 +46,8 @@ main {
 
 /* Album Container */
 #album-container {
-    width: 100vw;
-    height: 100vh;
+    width: 50vw;
+    height: 50vh;
     background: linear-gradient(145deg, #004cff, #4400ff);
     border-radius: 15px;
     box-shadow: 0 0 30px rgba(0, 106, 255, 0.5);

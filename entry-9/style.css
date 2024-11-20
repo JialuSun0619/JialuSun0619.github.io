@@ -1,81 +1,123 @@
-/* General styles */
-body {
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
-    font-family: "Gill Sans", sans-serif;
-    background-color: #111;
-    color: white;
-    text-align: center;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #101010;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    overflow: hidden;
 }
 
 header {
-    margin-top: 20px;
     text-align: center;
+    margin-top: 20px;
+    animation: fadeIn 2s ease-in-out;
 }
 
 header h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
+    font-size: 3rem;
+    letter-spacing: 5px;
+    color: #fff;
 }
 
 header p {
     font-size: 1.2rem;
-    color: #888;
+    margin-top: 10px;
+    color: #aaa;
 }
 
-/* Album container */
-#album-container {
-    margin: 30px auto;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+/* Visual Container */
+#visual-container {
+    position: relative;
+    width: 80%;
+    height: 50vh;
+    overflow: hidden;
+    border: 2px solid #444;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #222, #111);
 }
 
-.album-card {
-    width: 60vw;
-    max-width: 400px;
-    background-color: #222;
-    padding: 20px;
-    border: 2px solid #fff;
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.album-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
-}
-
-#cover-image {
+#visual {
     width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 15px;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: fadeIn 2s ease;
 }
 
-/* Button styles */
-button {
-    padding: 10px 20px;
+/* Info Section */
+.info {
+    text-align: center;
+    margin-top: 20px;
+    animation: slideUp 1s ease-in-out;
+}
+
+.info h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #930303;
+}
+
+.info p {
     font-size: 1rem;
+    color: #ccc;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Button */
+#shuffle-btn {
+    background: none;
     border: 2px solid #fff;
-    background: transparent;
     color: #fff;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    margin-top: 20px;
     cursor: pointer;
-    border-radius: 5px;
-    transition: background 0.3s ease, color 0.3s ease;
+    transition: all 0.3s ease-in-out;
 }
 
-button:hover {
+#shuffle-btn:hover {
     background-color: #fff;
-    color: #111;
+    color: #101010;
+    transform: scale(1.1);
 }
 
-/* Footer styles */
+/* Footer */
 footer {
-    margin-top: 30px;
-    font-size: 1rem;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
     color: #888;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+    }
 }

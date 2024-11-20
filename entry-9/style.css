@@ -46,8 +46,8 @@ main {
 
 /* Album Container */
 #album-container {
-    width: 200vw;
-    height: 200vh;
+    width: 100vw;
+    height: 100vh;
     background: linear-gradient(145deg, #004cff, #4400ff);
     border-radius: 15px;
     box-shadow: 0 0 30px rgba(0, 106, 255, 0.5);
@@ -93,7 +93,7 @@ main {
 
 /* Button Styles */
 #shuffle-btn {
-    background: linear-gradient(45deg, #ff00ff, #00ffff);
+    background: linear-gradient(45deg, #6a0000, #000000);
     border: none;
     color: white;
     padding: 15px 30px;
@@ -108,7 +108,7 @@ main {
 
 #shuffle-btn:hover {
     transform: scale(1.1);
-    background: linear-gradient(45deg, #00ff00, #ff00ff);
+    background: linear-gradient(45deg, #0040ff, #ffdd1f);
 }
 
 /* Footer */
@@ -121,7 +121,7 @@ footer {
 /* Animations */
 @keyframes textGlow {
     from {
-        text-shadow: 0 0 15px #ffff00, 0 0 25px #6f00ff;
+        text-shadow: 0 0 15px #ffffff, 0 0 25px #6f00ff;
     }
     to {
         text-shadow: 0 0 25px #0800ff, 0 0 40px #ac0000;

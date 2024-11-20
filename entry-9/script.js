@@ -5,9 +5,36 @@ const shuffleBtn = document.getElementById('shuffle-btn');
 // Album data: images and descriptions
 const albums = [
     {
-        cover: "1.jpg",
-        title: "Tame Impala",
-        description: "Hypnotic vibes and psychedelic rock tunes."
+        cover: "1.png",
+        title: "春游",
+        description: "1
+                        早上好
+                        04:20
+                        2
+                        Monday (feat. Lionman)
+                        04:26
+                        3
+                        北京！咖啡！
+                        02:26
+                        4
+                        橘子汽水
+                        03:57
+                        5
+                        中場休息
+                        02:32
+                        6
+                        狗熊
+                        04:10
+                        7
+                        煙花
+                        05:13
+                        8
+                        河流
+                        04:53
+                        9
+                        Hello
+                        05:42
+                        同一片天空下"
     },
     {
         cover: "2.jpg",
@@ -16,8 +43,8 @@ const albums = [
     },
     {
         cover: "3.jpg",
-        title: "The Flaming Lips",
-        description: "Cosmic soundscapes that take you to another world."
+        title: "Tame Impala",
+        description: "Hypnotic vibes and psychedelic rock tunes."
     },
     {
         cover: "4.jpg",

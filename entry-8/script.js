@@ -6,11 +6,11 @@ const albumArtist = document.getElementById("album-artist");
 
 // List of album data with cover images, audio files, titles, and artists
 const albumData = [
-    { cover: "1.png", audio: "1.mp3", title: "Album One", artist: "Artist One" },
-    { cover: "2.png", audio: "2.mp3", title: "Album Two", artist: "Artist Two" },
-    { cover: "3.png", audio: "3.mp3", title: "Album Three", artist: "Artist Three" },
-    { cover: "4.png", audio: "4.mp3", title: "Album Four", artist: "Artist Four" },
-    { cover: "5.png", audio: "5.mp3", title: "Album Five", artist: "Artist Five" }
+    { cover: "1.png", audio: "1.mp3", title: "Phoenix: Flames Are Dew Upon My Skin", artist: "Eartheater" },
+    { cover: "2.png", audio: "2.mp3", title: "Album Two", artist: "Wen Zhaojie" },
+    { cover: "3.png", audio: "3.mp3", title: "Fann", artist: "Fann" },
+    { cover: "4.png", audio: "4.mp3", title: "极乐大厦揭幕", artist: "八仙飯店" },
+    { cover: "5.png", audio: "5.mp3", title: "Flow", artist: "Naiwen Yang" }
 ];
 
 // Colors for random background and border effects

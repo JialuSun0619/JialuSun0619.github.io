@@ -28,301 +28,125 @@ header p {
     animation: fadeIn 2.5s ease-in-out forwards;
 }
 
-/* Entries Section */
-.entries {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 60px; /* Space between shapes */
-    margin-bottom: 50px;
-}
-
-/* Dynamic Circle Shape */
-.entry-dynamic-circle {
-    width: 150px;
-    height: 150px;
-    background: linear-gradient(135deg, #fff, #ccc);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    transition: transform 0.6s ease-in-out, background-color 0.6s ease-in-out;
-}
-
-.entry-dynamic-circle:hover {
-    transform: scale(1.2) rotate(5deg);
-    background-color: #888;
-}
-
-.entry-dynamic-circle .entry-title {
-    color: black;
-    font-size: 1.5rem;
-    padding: 10px;
-    transition: color 0.3s ease;
-}
-
-.entry-dynamic-circle:hover .entry-title {
-    color: white;
-}
-
-/* Dynamic Polygon Shape */
-.entry-dynamic-polygon {
-    width: 150px;
-    height: 150px;
-    background: linear-gradient(145deg, #fff, #ddd);
-    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    transition: transform 0.6s ease-in-out, background-color 0.6s ease-in-out;
-}
-
-.entry-dynamic-polygon:hover {
-    transform: scale(1.3) rotate(-10deg);
-    background-color: #888;
-}
-
-.entry-dynamic-polygon .entry-title {
-    color: black;
-    font-size: 1.5rem;
-    padding: 10px;
-    transition: color 0.3s ease;
-}
-
-.entry-dynamic-polygon:hover .entry-title {
-    color: white;
-}
-
-/* Dynamic Triangle Shape */
-.entry-dynamic-triangle {
-    width: 0;
-    height: 0;
-    border-left: 75px solid transparent;
-    border-right: 75px solid transparent;
-    border-bottom: 150px solid #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
+/* Turntable */
+.turntable {
     position: relative;
-    transition: transform 0.5s ease-in-out, border-bottom-color 0.5s ease-in-out;
+    width: 500px;
+    height: 500px;
+    background: #ddd;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.entry-dynamic-triangle:hover {
-    transform: scale(1.2) rotate(5deg);
-    border-bottom-color: #888;
-}
-
-.entry-dynamic-triangle .entry-title {
+/* Vinyl Record */
+.vinyl-record {
     position: absolute;
-    top: 60px;
-    font-size: 1.5rem;
-    padding: 10px;
-    color: black;
-    transition: color 0.3s ease;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, #000 70%, #444 100%);
+    border-radius: 50%;
+    animation: spin 15s linear infinite;
 }
 
-.entry-dynamic-triangle:hover .entry-title {
-    color: white;
+/* Center Label */
+.center-label {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #f00;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-/* Dynamic Blob Shape */
-.entry-dynamic-blob {
-    width: 150px;
-    height: 150px;
-    background: radial-gradient(circle at 50% 50%, #fff, #bbb);
-    clip-path: polygon(39% 6%, 60% 2%, 75% 17%, 85% 33%, 95% 54%, 75% 81%, 50% 98%, 25% 81%, 8% 50%, 15% 24%);
+/* Vinyl Record Entries (Wedges) */
+.entry {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(50% 50%, 100% 50%, 100% 0, 50% 0);
+    background: rgba(255, 255, 255, 0.2);
+    transform-origin: 50% 50%;
+    transition: background-color 0.3s ease;
+}
+
+.entry:hover {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+/* Position each sector */
+.entry-1 { transform: rotate(0deg); }
+.entry-2 { transform: rotate(36deg); }
+.entry-3 { transform: rotate(72deg); }
+.entry-4 { transform: rotate(108deg); }
+.entry-5 { transform: rotate(144deg); }
+.entry-6 { transform: rotate(180deg); }
+.entry-7 { transform: rotate(216deg); }
+.entry-8 { transform: rotate(252deg); }
+.entry-9 { transform: rotate(288deg); }
+.entry-10 { transform: rotate(324deg); }
+
+/* Stylus */
+.stylus {
+    position: absolute;
+    top: 30%;
+    left: 80%;
+    width: 10px;
+    height: 200px;
+    background: #333;
+    transform-origin: top center;
+    transform: rotate(-45deg);
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+/* Controls */
+.controls {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    transition: transform 0.6s ease-in-out, background-color 0.6s ease-in-out;
+    gap: 10px;
 }
 
-.entry-dynamic-blob:hover {
-    transform: scale(1.4) rotate(15deg);
-    background-color: #888;
+.button {
+    width: 30px;
+    height: 30px;
+    background: #f00;
+    border-radius: 50%;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
 }
 
-.entry-dynamic-blob .entry-title {
-    color: black;
-    font-size: 1.5rem;
-    padding: 10px;
-    transition: color 0.3s ease;
+.slider {
+    width: 100px;
+    height: 10px;
+    background: #555;
+    border-radius: 5px;
+    position: relative;
 }
 
-.entry-dynamic-blob:hover .entry-title {
-    color: white;
+.slider::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #999;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-/* Dynamic Hexagon Shape */
-.entry-dynamic-hexagon {
-    width: 150px;
-    height: 150px;
-    background: linear-gradient(145deg, #fff, #ddd);
-    clip-path: polygon(25% 6%, 75% 6%, 100% 50%, 75% 94%, 25% 94%, 0% 50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    transition: transform 0.6s ease-in-out, background-color 0.6s ease-in-out;
-}
-
-.entry-dynamic-hexagon:hover {
-    transform: scale(1.3) rotate(10deg);
-    background-color: #888;
-}
-
-.entry-dynamic-hexagon .entry-title {
-    color: black;
-    font-size: 1.5rem;
-    padding: 10px;
-    transition: color 0.3s ease;
-}
-
-.entry-dynamic-hexagon:hover .entry-title {
-    color: white;
-}
-
-/* Dynamic Pentagon Shape */
-.entry-dynamic-pentagon {
-    width: 150px;
-    height: 150px;
-    background: linear-gradient(135deg, #fff, #ddd);
-    clip-path: polygon(50% 0%, 100% 38%, 81% 100%, 19% 100%, 0% 38%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    transition: transform 0.6s ease-in-out, background-color 0.6s ease-in-out;
-}
-.entry-dynamic-pentagon:hover {
-    transform: scale(1.3) rotate(12deg);
-    background-color: #888;
-}
-
-.entry-dynamic-pentagon .entry-title {
-    color: black;
-    font-size: 1.5rem;
-    padding: 10px;
-    transition: color 0.3s ease;
-}
-
-.entry-dynamic-pentagon:hover .entry-title {
-    color: white;
-}
-
-/* Dynamic Octagon Shape */
-.entry-dynamic-octagon {
-    width: 150px;
-    height: 150px;
-    background: linear-gradient(145deg, #fff, #bbb);
-    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    transition: transform 0.6s ease-in-out, background-color 0.6s ease-in-out;
-}
-
-.entry-dynamic-octagon:hover {
-    transform: scale(1.3) rotate(-8deg);
-    background-color: #888;
-}
-
-.entry-dynamic-octagon .entry-title {
-    color: black;
-    font-size: 1.5rem;
-    padding: 10px;
-    transition: color 0.3s ease;
-}
-
-.entry-dynamic-octagon:hover .entry-title {
-    color: white;
-}
-
-
-/* Dynamic Star Shape */
-.entry-dynamic-star {
-    width: 150px;
-    height: 150px;
-    background: linear-gradient(145deg, #fff, #ddd);
-    clip-path: polygon(
-        50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%,
-        50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%
-    );
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    transition: transform 0.6s ease-in-out, background-color 0.6s ease-in-out;
-}
-
-.entry-dynamic-star:hover {
-    transform: scale(1.3) rotate(15deg);
-    background-color: #888;
-}
-
-.entry-dynamic-star .entry-title {
-    color: black;
-    font-size: 1.5rem;
-    padding: 10px;
-    transition: color 0.3s ease;
-}
-
-.entry-dynamic-star:hover .entry-title {
-    color: white;
-}
-
-/* Dynamic Cross Shape */
-.entry-dynamic-cross {
-    width: 150px;
-    height: 150px;
-    background: linear-gradient(145deg, #fff, #ddd);
-    clip-path: polygon(
-        25% 0%, 75% 0%, 75% 25%, 100% 25%, 100% 75%, 75% 75%, 75% 100%, 
-        25% 100%, 25% 75%, 0% 75%, 0% 25%, 25% 25%
-    );
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    transition: transform 0.6s ease-in-out, background-color 0.6s ease-in-out;
-}
-
-.entry-dynamic-cross:hover {
-    transform: scale(1.3) rotate(-15deg);
-    background-color: #888;
-}
-
-.entry-dynamic-cross .entry-title {
-    color: black;
-    font-size: 1.5rem;
-    padding: 10px;
-    transition: color 0.3s ease;
-}
-
-.entry-dynamic-cross:hover .entry-title {
-    color: white;
-}
-
-/* Footer */
-footer {
-    font-size: 1rem;
-    color: #888;
-    animation: fadeIn 3s ease-in-out forwards;
-}
-
-/* Keyframes for Fade In */
-@keyframes fadeIn {
+/* Spinning Animation */
+@keyframes spin {
     from {
-        opacity: 0;
-        transform: translateY(30px);
+        transform: rotate(0deg);
     }
     to {
-        opacity: 1;
-        transform: translateY(0);
+        transform: rotate(360deg);
     }
 }

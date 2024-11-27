@@ -82,8 +82,8 @@ main {
 
 #album-container .overlay h2 {
     font-size: 2rem;
-    color: #ffff00;
-    text-shadow: 0 0 10px #7e0000, 0 0 20px #ff0000;
+    color: #0800ff;
+    text-shadow: 0 0 10px #e2f701, 0 0 20px #ffbb00;
 }
 
 #album-container .overlay p {

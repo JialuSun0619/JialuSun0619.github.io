@@ -63,22 +63,23 @@ header p {
     transform: translate(-50%, -50%);
 }
 
-/* Vinyl Record Entries (Wedges) */
+/* Vinyl Record Entries (10 Slices) */
 .entry {
     position: absolute;
     width: 100%;
     height: 100%;
-    clip-path: polygon(50% 50%, 100% 50%, 100% 0, 50% 0);
     background: rgba(255, 255, 255, 0.2);
+    clip-path: polygon(
+        50% 50%, 
+        50% 0%, /* 起点为顶部中心 */
+        90% 10%, /* 扇形结束点 */
+        50% 50%  /* 返回到圆心 */
+    );
     transform-origin: 50% 50%;
     transition: background-color 0.3s ease;
 }
 
-.entry:hover {
-    background: rgba(255, 255, 255, 0.6);
-}
-
-/* Position each sector */
+/* 对每个扇形进行旋转 */
 .entry-1 { transform: rotate(0deg); }
 .entry-2 { transform: rotate(36deg); }
 .entry-3 { transform: rotate(72deg); }

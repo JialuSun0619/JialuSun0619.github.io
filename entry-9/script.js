@@ -1,6 +1,6 @@
 // Select the album container and shuffle button
 const albumContainer = document.getElementById('album-container');
-const shuffleBtn = document.getElementById('shuffle-btn');
+const shuffleBtn = document.getElementById('next-album');
 
 // Album data: images and descriptions
 const albums = [
@@ -30,7 +30,6 @@ const albums = [
         description: "Chill, lo-fi indie rock for wandering minds."
     }
 ];
-
 
 // Function to load a random album
 function loadRandomAlbum() {

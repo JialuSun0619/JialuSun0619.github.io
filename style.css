@@ -116,7 +116,7 @@ header p {
 .button {
     width: 30px;
     height: 30px;
-    background: #f00;
+    background: rgb(155, 1, 1);
     border-radius: 50%;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
 }

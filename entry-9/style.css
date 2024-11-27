@@ -99,6 +99,7 @@ main {
     padding: 15px 30px;
     font-size: 1.2rem;
     font-weight: bold;
+    position: relative;
     cursor: pointer;
     text-transform: uppercase;
     border-radius: 50px;

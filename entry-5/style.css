@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: "Gill Sans", sans-serif;
+    font-family:"komu-a", sans-serif;
     background-color: black;
     color: white;
     display: flex;
@@ -33,7 +33,6 @@ header p {
     margin-top: 10px;
 }
 
-/* Media Grid for Desktop */
 .media-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -68,12 +67,12 @@ footer {
 a{
     color:white;
     font-size: 20px;
-    font-family: "gill-sans-nova", sans-serif;
+    font-family:"komu-a", sans-serif;
     font-weight: 700;
     font-style: normal;
     text-decoration: none;
 }
-/* Media Queries */
+
 @media (max-width: 1024px) {
     .media-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -110,7 +109,6 @@ a{
 }
 
 @media (max-width: 480px) {
-    /* For Mobile View - Stacked cards layout */
     .media-grid {
         display: flex;
         flex-direction: column;

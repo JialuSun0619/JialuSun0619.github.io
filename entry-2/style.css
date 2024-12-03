@@ -1,14 +1,14 @@
 p{
     color:rgb(255, 255, 255);
     font-size: 20px;
-    font-family: "gill-sans-nova", sans-serif;
+    font-family:"komu-a", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 h1{
     color:rgb(255, 255, 255);
     font-size: 70px;
-    font-family: "gill-sans-nova-shadowed", sans-serif;
+    font-family:"komu-a", sans-serif;
     font-weight: 500;
     font-style: normal;
     animation-duration: 2400ms;
@@ -22,19 +22,19 @@ body{
 h2{
     color: #ffffff;
     font-size: 30px;
-    font-family: "gill-sans-nova", sans-serif;
+    font-family:"komu-a", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
 h3{
     color: #ffffff;
     font-size: 25px;
-    font-family: "gill-sans-nova", sans-serif;
+    font-family:"komu-a", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
 .p1{
-    font-family: "gill-sans-nova", sans-serif;
+    font-family:"komu-a", sans-serif;
     font-weight: 400;
     font-style: italic;
     color:rgb(255, 255, 255);
@@ -54,7 +54,7 @@ img{
 a{
     color:white;
     font-size: 20px;
-    font-family: "gill-sans-nova", sans-serif;
+    font-family:"komu-a", sans-serif;
     font-weight: 700;
     font-style: normal;
 }

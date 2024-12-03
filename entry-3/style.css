@@ -1,12 +1,10 @@
-/*default styles*/
 body{
     margin:0;
     padding:0;
-    font-family:"gill-sans-nova", sans-serif;
+    font-family:"komu-a", sans-serif;
     background-color:black;
     color:white;
 }
-/*layout*/
 .container {
     max-width: 1400px;
     margin: 0 auto;
@@ -17,13 +15,12 @@ header {
     margin-bottom: 60px;
 }
 h1 {
-    font-family: "gill-sans-nova-shadowed", sans-serif;
+    font-family:"komu-a", sans-serif;
     font-style: normal;
     font-size: 3rem;
     font-weight: 700;
     animation: fadeIn 1.5s ease-in-out forwards;
 }
-/*highlight section for gif*/
 .highlight-gif{
     text-align: center;
     margin-bottom: 80px;
@@ -41,14 +38,12 @@ h1 {
     transform: scale(1.08) rotate(2deg);
 }
 
-/*images gallery grid layout*/
 .image-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 30px;
     margin-top:20px;
 }
-/* Image Section Styles */
 .img-section {
     display: flex;
     justify-content: center;
@@ -58,7 +53,6 @@ h1 {
     position:relative;
 }
 
-/*span for certain images*/
 .img-section img {
     width: 100%;
     height: auto;
@@ -75,7 +69,6 @@ h1 {
     box-shadow: 0 10px 30px rgba(255, 255, 255, 0.4);
 }
 
-/* Animations */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -87,7 +80,6 @@ h1 {
     }
 }
 
-/*animations*/
 @keyframes fadeIn{
     from{
         opacity:0;
@@ -109,7 +101,6 @@ h1 {
     }   
 }
 
-/*links*/
 a{
     color: white;
     text-decoration:none;
@@ -120,14 +111,13 @@ a{
 a:hover{
     color:#9b1919;
 }
-/*paragraphs*/
 p{
     font-size:20px;
     line-height: 1.6;
     animation:fadeIn 1.2s ease-in-out forwards;
     opacity: 0;
 }
-/* Footer */
+
 footer {
     text-align: center;
     padding: 20px;

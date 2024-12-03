@@ -1,8 +1,7 @@
-/* General styles */
 body {
     margin: 0;
     padding: 0;
-    font-family: "Gill Sans", sans-serif;
+    font-family:"komu-a", sans-serif;
     background-color: black;
     color: white;
     display: flex;
@@ -11,7 +10,7 @@ body {
 }
 
 header h1 {
-    font-family: "gill-sans-nova-shadowed", sans-serif;
+    font-family:"komu-a", sans-serif;
     font-size: 3rem;
     font-weight: bold;
     margin-top: 20px;
@@ -24,7 +23,6 @@ header p {
     color: #888;
 }
 
-/* Soundwaves Section */
 .soundwaves {
     display: flex;
     justify-content: center;
@@ -35,8 +33,8 @@ header p {
 
 .wave {
     width: 20px;
-    height: 200px;
-    background: linear-gradient(135deg, white, #444);
+    height: 20px;
+    background: linear-gradient(135deg, white);
     border-radius: 10px;
     animation: pulse 2s infinite ease-in-out;
     transition: transform 0.3s ease, background-color 0.3s ease;
@@ -47,14 +45,12 @@ header p {
     background-color: #fff;
 }
 
-/* Individual wave timings */
 .wave-1 { animation-delay: 0s; }
 .wave-2 { animation-delay: 0.2s; }
 .wave-3 { animation-delay: 0.4s; }
 .wave-4 { animation-delay: 0.6s; }
 .wave-5 { animation-delay: 0.8s; }
 
-/* Animation for the soundwaves */
 @keyframes pulse {
     0% { transform: scaleY(1); }
     50% { transform: scaleY(1.5); }
@@ -75,15 +71,12 @@ header p {
     border-radius: 15px;
     border: 2px solid white;
 }
-
-/* Hover effects for image */
 .image-hover:hover {
     transform: scale(1.2) rotate(5deg);
     filter: grayscale(100%);
     box-shadow: 0 15px 30px rgba(255, 255, 255, 0.6);
 }
 
-/* Entry Text */
 .entry-text {
     margin-top: 40px;
     max-width: 600px;
@@ -104,7 +97,6 @@ header p {
     color: #ccc;
 }
 
-/* Footer */
 footer {
     text-align: center;
     padding: 20px;
@@ -115,7 +107,7 @@ footer {
 a{
     color:white;
     font-size: 20px;
-    font-family: "gill-sans-nova", sans-serif;
+    font-family:"komu-a", sans-serif;
     font-weight: 700;
     font-style: normal;
     text-decoration: none;
@@ -124,7 +116,6 @@ footer a:hover {
     color: #2a2a2a;
 }
 
-/* Media Queries */
 @media (max-width: 768px) {
     .wave {
         width: 10px;

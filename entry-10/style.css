@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body {
+    font-family:"komu-a", sans-serif;
+    background: #000000;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    cursor: url('1.png'), auto;
+    }
+    header {
+    position: absolute;
+    top: 10px;
+    text-align: center;
+    width: 100%;
+    }
+    header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    }
+    main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    }
+    footer {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+    color: #999;
+    }
+    #shapes-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    z-index: 2;
+    pointer-events: auto;
+    }
+    .shape {
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, #ffffff, #7d7c7c);
+    border-radius: 50%;
+    transform: scale(1);
+    transition: transform 0.2s ease-out;
+    }
+    .shape:hover {
+    transform: scale(0);
+    transition: transform 0.2s ease-out;
+    opacity: 0;
+    }
+    #songs-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+    }
+    .song {
+    font-family:"komu-a", sans-serif;
+    position: absolute;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 5px black;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: auto;
+    }
+    .song:hover {
+    opacity: 1;
+    cursor: pointer;
+    }
+    #return-home {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    z-index: 100;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+    #return-home:hover {
+    transform: scale(1.1);
+    background-color: #555;
+    }
+    .enter-key {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    .enter-key:before,
+    .enter-key:after {
+    content: "";
+    position: absolute;
+    background-color: #000000;
+    }
+    .enter-key:before {
+    width: 5px;
+    height: 20px;
+    left: 8px;
+    bottom: 6px;
+    }
+    .enter-key:after {
+    width: 15px;
+    height: 5px;
+    bottom: 6px;
+    left: 8px;
+    transform: rotate(90deg);
+    }
+    

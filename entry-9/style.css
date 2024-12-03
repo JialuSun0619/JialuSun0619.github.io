@@ -1,4 +1,4 @@
-/* General Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -44,7 +44,7 @@ main {
     gap: 20px;
 }
 
-/* Album Container */
+
 #album-container {
     width: 50vw;
     height: 50vh;
@@ -91,7 +91,7 @@ main {
     color: #ddd;
 }
 
-/* Button Styles */
+
 #next-album{
     background: linear-gradient(45deg, #396aa5, #922f2f);
     border: none;
@@ -112,14 +112,14 @@ main {
     background: linear-gradient(45deg, #0040ff, #ffdd1f);
 }
 
-/* Footer */
+
 footer {
     margin-top: 20px;
     font-size: 0.8rem;
     color: #888;
 }
 
-/* Animations */
+
 @keyframes textGlow {
     from {
         text-shadow: 0 0 15px #ffffff, 0 0 25px #6f00ff;

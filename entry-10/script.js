@@ -40,6 +40,3 @@ const songs = [
     songsLayer.appendChild(songElement);
     });
     
-    document.getElementById('return-home').addEventListener('click', () => {
-    console.log('Returning to homepage...');
-    });

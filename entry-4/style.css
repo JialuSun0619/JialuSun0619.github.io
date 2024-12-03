@@ -113,3 +113,49 @@ a{
     font-style: normal;
     text-decoration: none;
 }
+
+#return-home {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    text-decoration: none;
+    z-index: 1000;
+}
+
+.enter-key {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.enter-key .arrow {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid white;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    transform: rotate(0);
+}
+
+.enter-key .line {
+    width: 70%;
+    height: 8px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(0, -50%);
+}
+
+#return-home:hover .enter-key .arrow {
+    border-left-color: #ccc; 
+}
+
+#return-home:hover .enter-key .line {
+    background-color: #ccc; 
+}

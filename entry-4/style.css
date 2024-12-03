@@ -1,8 +1,7 @@
-/* General Styles */
 body {
     margin: 0;
     padding: 0;
-    font-family: "Gill Sans", sans-serif;
+    font-family:"komu-a", sans-serif;
     background-color: black;
     color: white;
     overflow-x: hidden;
@@ -24,13 +23,13 @@ header h1 {
     text-align: center;
     margin-top: 20px;
     color: white;
-    font-family: "gill-sans-nova-shadowed", sans-serif;
+    font-family:"komu-a", sans-serif;
 }
 header p{
     font-size: 1.2rem;
     font-weight: normal;
     text-align: center;
-    font-family: "gill-sans-nova-medium", sans-serif;
+    font-family:"komu-a", sans-serif;
     color: #888;
 }
 
@@ -41,7 +40,6 @@ header p{
     height: 100%;
 }
 
-/* Track Styles */
 .track {
     position: absolute;
     animation: float 10s infinite ease-in-out;
@@ -49,7 +47,7 @@ header p{
 }
 
 .track-name, .artist-name {
-    font-family: "gill-sans-nova-book-italic", sans-serif;
+    font-family:"komu-a", sans-serif;
     font-size: 1rem;
     color: white;
     opacity: 0.9;
@@ -60,7 +58,6 @@ header p{
     transform: scale(1.5) rotate(2deg);
 }
 
-/* Media Elements */
 .media {
     position: absolute;
     width: 500px;
@@ -87,13 +84,11 @@ header p{
     transition: transform 2s ease, box-shadow 0.4s ease;
 }
 
-/* Hover effects for media */
 .media:hover .media1:hover .floating-media {
     transform: scale(1.5);
     box-shadow: 0 10px 30px rgba(255, 255, 255, 0.5);
 }
 
-/* Keyframes for Floating Animation */
 @keyframes float {
     0% {
         transform: translate(0, 0) scale(1) rotate(0deg);
@@ -106,7 +101,6 @@ header p{
     }
 }
 
-/* Footer */
 footer {
     text-align: center;
     padding: 20px;

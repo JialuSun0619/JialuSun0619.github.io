@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: "Gill Sans", sans-serif;
+    font-family:"komu-a", sans-serif;
     background-color: #000; 
     color: white;
     display: flex;
@@ -32,7 +32,6 @@ header p {
     color: #888;
 }
 
-/* Intro Section */
 .section {
     width: 100%;
     max-width: 800px;
@@ -52,7 +51,6 @@ header p {
     align-items: center; 
 }
 
-/* Video Section */
 .video-section {
     display: flex;
     flex-direction: column;
@@ -64,7 +62,7 @@ header p {
     width: 50px;
     height: 80px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: #ffffff;
     color: #000;
     display: flex;
     align-items: center;
@@ -76,7 +74,7 @@ header p {
 
 .play-button:hover {
     transform: scale(1.2);
-    background-color: #ff00ff;
+    background-color: #0f004a;
     color: #fff;
 }
 

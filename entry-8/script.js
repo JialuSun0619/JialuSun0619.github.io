@@ -16,7 +16,7 @@ const colors = ["#00FF00", "#FF00FF", "#00FFFF", "#FFFF00", "#FF5733"];
 
 let currentIndex = Math.floor(Math.random() * albumData.length);
 
-// Function to load an album by index
+
 function loadAlbum(index) {
     const album = albumData[index];
     albumCover.src = album.cover;
@@ -24,26 +24,26 @@ function loadAlbum(index) {
     albumTitle.innerText = album.title;
     albumArtist.innerText = album.artist;
 
-    // Random background and border colors
+    
     const randomColor = colors[Math.floor(Math.random() * colors.length)];
     albumContainer.style.borderColor = randomColor;
     albumContainer.style.transform = `rotate(${Math.floor(Math.random() * 30) - 15}deg) scale(${Math.random() * 0.4 + 0.8})`;
 
-    // Fade-in effect for album cover
+   
     albumCover.style.opacity = 0;
     setTimeout(() => {
         albumCover.style.opacity = 1;
     }, 100);
 }
 
-// Function to play the next album
+
 function nextAlbum() {
     currentIndex = (currentIndex + 1) % albumData.length;
     loadAlbum(currentIndex);
 }
 
-// Auto-play the next album every 10 seconds
+
 setInterval(nextAlbum, 10000);
 
-// Load initial album
+
 loadAlbum(currentIndex);

@@ -100,6 +100,8 @@ main {
     font-size: 1.2rem;
     font-weight: bold;
     position: relative;
+    bottom:30px;
+    position: center;
     z-index: 2;
     cursor: pointer;
     text-transform: uppercase;

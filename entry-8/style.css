@@ -59,6 +59,7 @@ header h1 {
 }
 
 #album-title, #album-artist {
+    font-family:"komu-a", sans-serif;
     font-size: 1rem;
     margin: 5px 0;
 }
@@ -74,6 +75,7 @@ button {
     font-size: 1rem;
     cursor: pointer;
     transition: background 0.3s ease, color 0.3s ease;
+    font-family:"komu-a", sans-serif;
 }
 
 button:hover {

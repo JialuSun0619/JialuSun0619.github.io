@@ -69,8 +69,8 @@ header p{
 }
 .media1{
     position: absolute;
-    width: 1000px;
-    height: 1000px;
+    width: 100px;
+    height: 100px;
     overflow: hidden;
     animation: float 25s infinite ease-in-out;
     z-index: 0;

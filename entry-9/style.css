@@ -177,7 +177,7 @@ footer {
     position: relative;
 }
 
-.enter-key .arrow {
+.arrow {
     width: 0;
     height: 0;
     border-top: 10px solid transparent;
@@ -189,7 +189,7 @@ footer {
     transform: rotate(0);
 }
 
-.enter-key .line {
+.enter-key{
     width: 70%;
     height: 8px;
     background-color: white;

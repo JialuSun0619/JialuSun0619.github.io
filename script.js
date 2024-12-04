@@ -1,6 +1,6 @@
 const entries = document.querySelectorAll('.entry');
 const stylus = document.getElementById('stylus');
-const entries = document.querySelectorAll('.datalabel');
+const datalabels = document.querySelectorAll('.datalabel');
 
 entries.forEach((entry, index) => {
     entry.addEventListener('mouseover', () => {

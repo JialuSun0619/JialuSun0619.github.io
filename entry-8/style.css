@@ -79,6 +79,7 @@ button {
 button:hover {
     background: #fff;
     color: #111;
+    border-radius: 5px;
 }
 
 #return-home {

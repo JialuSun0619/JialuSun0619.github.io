@@ -107,7 +107,7 @@
         border-left: 15px solid white;
         position: absolute;
         top: 20%;
-        left: 35%;
+        right: 35%;
         transform: rotate(180);
     }
     

@@ -130,7 +130,7 @@ a{
         position: relative;
     }
     
-    .enter-key .arrow {
+.arrow {
         width: 0;
         height: 0;
         border-top: 10px solid transparent;

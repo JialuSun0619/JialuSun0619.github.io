@@ -115,7 +115,7 @@ button:hover {
     transform: rotate(0);
 }
 
-.enter-key .line {
+.enter-key {
     width: 70%;
     height: 8px;
     background-color: white;
@@ -129,6 +129,6 @@ button:hover {
     border-left-color: #ccc; 
 }
 
-#return-home:hover .enter-key .line {
+#return-home:hover .enter-key{
     background-color: #ccc; 
 }

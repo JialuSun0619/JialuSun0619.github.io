@@ -62,8 +62,8 @@ header p {
     width: 50px;
     height: 80px;
     border-radius: 50%;
-    background-color: #ffffff;
-    color: #000;
+    background-color: #000000;
+    color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;

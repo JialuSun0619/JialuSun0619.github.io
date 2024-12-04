@@ -34,7 +34,9 @@ h3{
     font-style: normal;
 }
 .p1{
-    font-family:"komu-a", sans-serif;
+    font-family: "gill-sans-nova", sans-serif;
+    font-weight: 300;
+     font-style: normal;
     font-weight: 400;
     font-style: italic;
     color:rgb(255, 255, 255);

@@ -1,8 +1,8 @@
-// Select the album container and shuffle button
+
 const albumContainer = document.getElementById('album-container');
 const shuffleBtn = document.getElementById('next-album');
 
-// Album data: images and descriptions
+
 const albums = [
     {
         cover: "1.png",
@@ -31,13 +31,13 @@ const albums = [
     }
 ];
 
-// Function to load a random album
+
 function loadRandomAlbum() {
-    // Randomly select an album
+    
     const randomIndex = Math.floor(Math.random() * albums.length);
     const album = albums[randomIndex];
 
-    // Update the album container with the selected album
+    
     albumContainer.innerHTML = `
         <img src="${album.cover}" alt="${album.title}">
         <div class="overlay">
@@ -47,8 +47,8 @@ function loadRandomAlbum() {
     `;
 }
 
-// Event listener for the shuffle button
+
 shuffleBtn.addEventListener('click', loadRandomAlbum);
 
-// Load an initial album on page load
+
 loadRandomAlbum();

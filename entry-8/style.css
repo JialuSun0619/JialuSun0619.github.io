@@ -76,6 +76,9 @@ button {
     cursor: pointer;
     transition: background 0.3s ease, color 0.3s ease;
     font-family:"komu-a", sans-serif;
+    position: relative;
+    bottom: 30px;
+    position: center;
 }
 
 button:hover {
